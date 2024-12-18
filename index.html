@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Even Ticket</title>
+    <style>
+      .ticket-container {
+        height: 360px;
+        width: 902px;
+        margin: 50px auto;
+        border-radius: 20px;
+        display: flex;
+        color: white;
+        font-family: cursive;
+      }
+      .user {
+        width: 40%;
+        border-radius: 15px;
+        border: 2px solid black;
+        box-shadow: 0px 0px 10px 5px rgb(74, 67, 72);
+        border-right: dashed rgb(254, 254, 254);
+        background-color: rgb(24, 1, 31);
+      }
+      .collector {
+        width: 60%;
+        border-radius: 15px;
+        border: 2px solid black;
+        box-shadow: 0px 0px 10px 5px rgb(74, 67, 72);
+        border-right: none;
+        background-color: rgb(24, 1, 31);
+      }
+      img {
+        height: 40px;
+        color: black;
+        width: 99%;
+        margin: 3px auto;
+      }
+
+      .ticketNo {
+        font-family: "Courier New", Courier, monospace;
+        padding-left: 20px;
+      }
+
+      .Concert {
+        padding-left: 20px;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 20px;
+      }
+
+      p {
+        padding-left: 20px;
+        font-family: 'Courier New', Courier, monospace;
+      }
+
+      /* Mobile */
+      @media (max-width:600px){
+           .ticket-container{
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            width: auto;
+           }
+
+           .user{
+            width: 460px;
+            border-right: solid;
+            border-bottom:none;
+           }
+
+           .collector{
+            width: 460px;
+            border-top: dashed white;
+            border-left: solid;
+            height: 400px; 
+           }
+        }
+
+       /* Tablet*/
+       @media (min-width:600px) and (max-width:800px){
+        
+        .ticket-container{
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            width: auto;
+           }
+
+           .user{
+            width: 680px;
+            border-right: solid;
+            border-bottom:none;
+           }
+
+           .collector{
+            width: 680px;
+            border-top: dashed white;
+            border-left: solid;
+            height: 400px; 
+           }
+        }
+    </style>
+  </head>
+  <body>
+    <div class="ticket-container">
+      <div class="user">
+        <img src="image/TGP logo.png" alt="" />
+        <hr />
+        <p class="Concert">Event : Dua Lipa Concert 👩‍🎤</p>
+        <span class="ticketNo">Ticket No : 456</span>
+
+        <p>Name : Vaibhav Rathod</p>
+        <p>Department : Mechanical Engineering <br /></p>
+        <p>Time : 3:45 PM </p>
+        <p>College ID : TBE20049 <br /></p>
+        <p>Ticket Price : <button style="border-radius: 5px"><b>500₹</b></button></p>
+      </div>
+      <div class="collector">
+        <img src="image/TGP logo.png" alt="" />
+        <hr />
+        <p class="Concert">Event : Dua Lipa Concert 👩‍🎤🎶</p>
+        <span class="ticketNo">Ticket No : 456</span>
+        <p>Name : Vaibhav Rathod</p>
+        <p>Department : Mechanical Engineering <br /></p>
+        <p>Time : 3:45 PM </p>
+        <p>College ID : TBE20049 <br /></p>
+        <p>Ticket Price : <button style="border-radius: 5px"> <b>500₹</b></button></p>
+      </div>
+    </div>
+  </body>
+</html>
